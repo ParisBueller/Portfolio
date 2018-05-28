@@ -13,7 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 
 
 @NgModule({
@@ -29,7 +29,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
