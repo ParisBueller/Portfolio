@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
 .navbar {
     min-height: 80px;
+}
+h2 {
+    font-family: 'Poiret One', sans-serif;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

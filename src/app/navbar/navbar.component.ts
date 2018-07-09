@@ -12,4 +12,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  openGithub() {
+    window.open("https://github.com/ParisBueller")
+  }
+
+  openTwitter() {
+    window.open("https://twitter.com/messages/compose?recipient_id=762079861766705152")
+  }
 }
