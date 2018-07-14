@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { $ } from '../../../../node_modules/protractor';
 
 
 @Component({
@@ -12,5 +13,7 @@ export class WorkComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
 
 }

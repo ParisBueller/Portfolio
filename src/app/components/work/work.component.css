@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+h3{
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.carousel{
+    margin-top: 7em;
+    margin-left: 17em;   
+}
+
+.carousel-caption{
+    text-align: center;
+}
