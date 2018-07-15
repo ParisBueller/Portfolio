@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+
 h3{
     font-family: 'Poiret One', sans-serif;
     text-align: center;
@@ -8,9 +9,15 @@ h3{
 
 .carousel{
     margin-top: 7em;
-    margin-left: 17em;   
+    display:block;
 }
 
 .carousel-caption{
     text-align: center;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
 }
