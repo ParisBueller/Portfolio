@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Email } from '../../models/Email';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

@@ -1,12 +1,73 @@
 <div class="container" align="center">
     <h5>Contact</h5>
-    <form #emailForm="ngForm" (ngSubmit)="onSubmit(emailForm)">
-        <div class="form-group">            
-            <input id="nameInput" class="form-control" type="text" placeholder="Name">            
-            <input id="companyInput" class="form-control" type="text" placeholder="Company">           
-            <input id="emailInput" class="form-control" type="email" placeholder="Email">
-            <textarea id="messageInput" class="form-control" type="text" rows="7" placeholder="Message"></textarea>
-        </div>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <div class="form-group">
+            <label for="name">Name</label>            
+                <input 
+                   id="nameInput" 
+                   class="form-control" 
+                   type="text" 
+                   name="name"
+                   #contactName="ngModel"
+                   [ngClass]="{'is-invalid':contactName.errors && contactName.touched}"
+                   [(ngModel)]="name"
+                   minlength="2"
+                   required
+                >
+                <div [hidden]="!contactName.errors?.required"
+                     class="invalid-feedback">
+                     Name required 
+                </div>
+                
+                <div [hidden]="!contactName.errors?.required"
+                     class="invalid-feedback">
+                     Must be at least 2 characters 
+                </div>
+        </div> 
+        
+        <div class="form-group">
+                <label for="company">Company</label>            
+                    <input 
+                       id="companyInput" 
+                       class="form-control" 
+                       type="text" 
+                       name="company"
+                       #companyName="ngModel"
+                       [ngClass]="{'is-invalid':companyName.errors && companyName.touched}"
+                       [(ngModel)]="company"
+                       required
+                    >
+                    <div [hidden]="!companyName.errors?.required"
+                         class="invalid-feedback">
+                         Company required 
+                    </div>
+            </div>  
+
+            <div class="form-group">
+                    <label for="email">Email</label>            
+                        <input 
+                           id="emailInput" 
+                           class="form-control" 
+                           type="text" 
+                           name="email"
+                           #emailEmail="ngModel"
+                           [ngClass]="{'is-invalid':emailEmail.errors && emailEmail.touched}"
+                           [(ngModel)]="email"
+                           pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                           required
+                        >
+                        <div [hidden]="!emailEmail.errors?.required"
+                             class="invalid-feedback">
+                             Email required 
+                        </div>
+                        
+                        <div [hidden]="!emailEmail.errors?.pattern"
+                             class="invalid-feedback">
+                            Email is not valid 
+                        </div>
+                </div>  
+
+            <textarea id="messageInput" class="form-control" type="text" rows="7" placeholder="Message"></textarea>        
     </form>
     <button (click)="sendEmail()" type="button" class="btn btn-dark">Send!</button>
 </div>
