@@ -6,3 +6,8 @@ h4{
     margin-top: 2em;
     font-size: 28px;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
