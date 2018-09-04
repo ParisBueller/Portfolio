@@ -4,11 +4,16 @@ h5{
     font-family: 'Poiret One', sans-serif;
     text-align: center;
     margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 28px;
 }
-
+.container {
+    margin-top: 6em;
+}
+.form-group {
+    margin-top: 2em;
+}
 .form-control{
     margin-top: 2em;
     width: 25%;
 }
-
