@@ -20,7 +20,7 @@ h3{
     padding: 50px;
   }
   .item2, .item3, .item4, .item5 {
-    width: 250px;
+    width: 270px;
   }
   .item1 {
     grid-row: 1/3;
