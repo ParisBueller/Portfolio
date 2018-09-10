@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 h3{
     font-family: 'Poiret One', sans-serif;
@@ -19,17 +19,21 @@ h3{
     border: #333 1px solid;
     padding: 50px;
   }
-  .item2, .item3, .item4, .item5 {
+  .item1, .item2, .item3 {
     width: 270px;
   }
-  .item1 {
+  /*.item1 {
     grid-row: 1/3;
     height: 400px;
     width: 400px;
-  }
+  } */
 
   .item2, .item3, .item4, .item5 > img {
     object-fit: cover;
     width:100%;
     height: 100%;
+  }
+
+  .description {
+    font-family: 'Raleway', sans-serif;
   }
