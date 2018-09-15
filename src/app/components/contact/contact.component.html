@@ -1,28 +1,14 @@
 <div class="container" align="center">
     <h5>Contact</h5>
-    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <form>
         <div class="form-group">          
                 <input 
                    placeholder="Name"
                    id="nameInput" 
                    class="form-control" 
                    type="text" 
-                   name="name"
-                   #contactName="ngModel"
-                   [ngClass]="{'is-invalid':contactName.errors && contactName.touched}"
-                   [(ngModel)]="name"
-                   minlength="2"
-                   required
+                   name="name" 
                 >
-                <div [hidden]="!contactName.errors?.required"
-                     class="invalid-feedback">
-                     Name required 
-                </div>
-                
-                <div [hidden]="!contactName.errors?.required"
-                     class="invalid-feedback">
-                     Must be at least 2 characters 
-                </div>
         </div> 
         
         <div class="form-group">           
@@ -32,15 +18,7 @@
                        class="form-control" 
                        type="text" 
                        name="company"
-                       #companyName="ngModel"
-                       [ngClass]="{'is-invalid':companyName.errors && companyName.touched}"
-                       [(ngModel)]="company"
-                       required
                     >
-                    <div [hidden]="!companyName.errors?.required"
-                         class="invalid-feedback">
-                         Company required 
-                    </div>
             </div>   
 
             <textarea id="messageInput" class="form-control" type="text" rows="8" placeholder="Message"></textarea>        

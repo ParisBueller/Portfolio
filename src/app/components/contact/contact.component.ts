@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Email } from '../../models/Email';
 
 @Component({
   selector: 'app-contact',
@@ -8,13 +7,7 @@ import { Email } from '../../models/Email';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  email: Email = {
-    name: '',
-    company: '',
-    email: '',
-    message: ''
 
-  }
 
   constructor() { }
 
