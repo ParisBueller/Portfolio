@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Email } from 'src/app/models/Email';
 
 
 @Component({
@@ -7,24 +8,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  email: Email = {
+    name: '',
+    company: '',
+    message: ''
+  }
 
-
+  enableSendEmail: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
   }
   
   sendEmail() {
-    const company = (<HTMLInputElement>document.getElementById("companyInput")).value;
-    const message = (<HTMLInputElement>document.getElementById("messageInput")).value;
+    const company = this.email.company;
+    const message = this.email.message;
 
-    let link = "mailto:wardparis.pw@gmail.com"
+    const link = "mailto:wardparis.pw@gmail.com"
              + "?subject=" + company 
              + "&body=" + message 
              ;
 
              window.location.href = link;
 
-    
+    this.email = {
+      name: '',
+      company: '',
+      message: ''
+    }   
   }
 }

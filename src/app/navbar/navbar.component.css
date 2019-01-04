@@ -13,6 +13,10 @@ h2 {
     transform: translateX(-50%);
 }
 
+.navbar-nav {
+    padding-right: 2rem;
+}
+
 
 @media(min-width:768px) {
     .navbar-toggle{display:none}

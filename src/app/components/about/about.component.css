@@ -11,23 +11,11 @@ h4{
 .container {
     font-family: 'Raleway', sans-serif;
     margin-top: 35px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: auto;
 }
  
-@media(max-width: 768px){
-.portrait {
-     width: 275px;
-     height: 275px;
-     position: relative;
-     overflow: hidden;
-     border-radius: 50%;
- }
-
- .img-fluid {
-     display: inline;
-     object-fit: cover;
- }
+img {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
