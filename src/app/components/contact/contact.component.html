@@ -1,6 +1,6 @@
 <div class="container" align="center">
     <h5>Contact</h5>
-    <form (submit)="onSubmit($event)">
+    <form>
         <div class="form-group">          
             <input
                 [(ngModel)]="email.name" 
@@ -12,14 +12,14 @@
             >
         </div>        
         <div class="form-group">           
-                <input
-                    [(ngModel)]="email.company" 
-                    placeholder="Company"
-                    id="companyInput" 
-                    class="form-control" 
-                    type="text" 
-                    name="company"
-                >
+            <input
+                [(ngModel)]="email.company" 
+                placeholder="Company"
+                id="companyInput" 
+                class="form-control" 
+                type="text" 
+                name="company"
+            >
         </div>
         <div class="form-group">  
             <textarea
@@ -31,8 +31,7 @@
                 name="message"
             >
             </textarea>
-        </div> 
-       
+        </div>       
     </form>
     <button 
         (click)="sendEmail()" 
