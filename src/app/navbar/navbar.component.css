@@ -3,8 +3,9 @@
 .navbar {
     min-height: 80px;
 }
-h2 {
+.navbar-brand {
     font-family: 'Poiret One', sans-serif;
+    font-size: 26px;
 }
 
 .abs-center-x {
@@ -15,6 +16,10 @@ h2 {
 
 .navbar-nav {
     padding-right: 2rem;
+}
+
+.nav-item {
+    cursor: pointer;
 }
 
 
